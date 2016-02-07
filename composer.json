@@ -1,5 +1,5 @@
 {
-    "name": "wisoot/fractalim",
+    "name": "wisoot/restify",
     "description": "Transform complex data-structure into associated array ready for API.",
     "keywords": [
         "api",
