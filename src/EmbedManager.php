@@ -61,8 +61,11 @@ class EmbedManager
      */
     public function getEmbedsFromParam($embedString)
     {
-        $embeds = [];
+        if (empty($embedString)) {
+            return [];
+        }
 
+        $embeds = [];
         $items = explode(',', $embedString);
 
         foreach ($items as $item) {

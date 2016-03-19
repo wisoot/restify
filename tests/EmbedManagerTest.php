@@ -116,6 +116,10 @@ class EmbedManagerTest extends PHPUnit_Framework_TestCase
 
     public function testGetEmbedsFromParam()
     {
+        $embeds = $this->embedManager->getEmbedsFromParam('');
+
+        $this->assertEquals([], $embeds);
+
         $embeds = $this->embedManager->getEmbedsFromParam('comments');
 
         $this->assertEquals(1, count($embeds));
